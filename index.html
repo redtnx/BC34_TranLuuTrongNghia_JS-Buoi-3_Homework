@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="exercise mb-5">
+        <div class="question">
+          <h3>Bài tập 1: Tính tiền lương nhân viên</h3>
+          <p>
+            Viết chương trình tính tiền lương nhân viên.<br />
+            Lương 1 ngày: 100,000. <br />
+            Cho người dùng nhập vào số ngày làm. <br />
+            Công thức tính lương: Lương 1 ngày * số ngày làm.
+          </p>
+        </div>
+        <hr />
+        <div class="answer__container">
+          <p>Lương 1 ngày: 100,000VND</p>
+          <input id="workingDays" placeholder="Số ngày làm" type="number" />
+          <button id="calcSalary">Tính lương</button>
+          <p id="totalSalary"></p>
+        </div>
+      </div>
+
+      <div class="exercise mb-5">
+        <div class="question">
+          <h3>Bài tập 2: Tính giá trị trung bình</h3>
+          <p>
+            Viết chương trình nhập vào 5 số thực. <br />
+            Tính giá trị trung bình của 5 số này và xuất ra màn hình.
+          </p>
+          <p>
+            Gợi ý: Giá trị trung bình là tổng của 5 số người dùng nhập chia cho
+            5.
+          </p>
+        </div>
+        <hr />
+        <div class="answer__container">
+          <div class="numberInput">
+            Số thực 1
+            <input id="num1" placeholder="Number 1" type="number" />
+            <br />
+            Số thực 2
+            <input id="num2" placeholder="Number 2" type="number" />
+            <br />
+            Số thực 3
+            <input id="num3" placeholder="Number 3" type="number" />
+            <br />
+            Số thực 4
+            <input id="num4" placeholder="Number 4" type="number" />
+            <br />
+            Số thực 5
+            <input id="num5" placeholder="Number 5" type="number" />
+          </div>
+          <div class="answer">
+            <button id="averageButton" class="mt-2">Tính trung bình</button>
+            <p id="averageAnswer"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercise mb-5">
+        <div class="question">
+          <h3>Bài tập 3: Quy đổi tiền</h3>
+          Giá USD hiện nay đang là 23,500VND. <br />
+          Viết chương trình quy đổi từ USD sang VND. <br />
+          Cho người dùng nhập vào số tiền USD. <br />
+          Tính và xuất số ra số tiền sau quy đổi. <br />
+          <p>
+            Ví dụ: <br />
+            Người dùng nhập 2 USD => Xuất ra 47,000VND
+          </p>
+        </div>
+        <hr />
+        <div class="answer__container">
+          <p>Giá USD hiện nay: 23,500VND</p>
+          <input id="amountUsd" placeholder="Số USD cần đổi" type="number" />
+          <button id="exchange">Đổi tiền</button>
+          <p id="totalVnd"></p>
+        </div>
+      </div>
+
+      <div class="excercise mb-5">
+        <div class="question">
+          <h3>Bài tập 4: Tính diện tính, chu vi hình chữ nhật</h3>
+          <p>
+            Viết chương trình nhập vào 2 chiều dài và chiều rộng của hình chữ
+            nhật. <br />
+            Tính và xuất ra diện tích, chu vi của hình chữ nhật đó.
+          </p>
+          <p>
+            Công thức: <br />
+            - Diện tích = dài * rộng <br />
+            - Chu vi = (dài + rộng) *2
+          </p>
+        </div>
+        <hr />
+        <div class="answer__container">
+          <p>
+            Chiều dài:
+            <input id="length" placeholder="Chiều dài" type="number" />
+          </p>
+          <p>
+            Chiều rộng:
+            <input id="width" placeholder="Chiều rộng" type="number" />
+          </p>
+          <button id="calcPerimeter">Tính chu vi</button>
+          <button id="calcArea">Tính diện tích</button>
+          <p id="result"></p>
+        </div>
+      </div>
+
+      <div class="excercise mb-5">
+        <div class="question">
+          <h3>Bài tập 5: Tính tổng 2 ký số</h3>
+          <p>
+            Viết chương trình nhập vào 1 chữ số có 2 chữ số (VD: 12, 44, 83).
+            <br />
+            Tính tổng 2 ký số của số vừa nhập. <br />
+            Ví dụ: <br />
+            12 => Tổng là 1 + 2 = 3 <br />
+            44 => Tổng là 4 + 4 = 8
+          </p>
+        </div>
+        <hr />
+        <div class="answer__container">
+          <p>
+            Số cần tính tổng ký số:
+            <input
+              id="numTwoDigits"
+              placeholder="Nhập số có 2 chữ số"
+              type="number"
+            />
+          </p>
+          <button id="calcSum">Tính tổng ký số</button>
+          <p id="sumResult"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="./index.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
